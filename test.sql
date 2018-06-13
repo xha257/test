@@ -96,7 +96,7 @@ END
 (
 case
 WHEN br.bronto_delivery_name like '%A' THEN 'Control A'
-WHEN br.bronto_delivery_name like '%B' or br.bronto_delivery_name like '%LexLaw' THEN 'Challenger B'
+WHEN br.bronto_delivery_name like '%B' or br.bronto_delivery_name like  THEN 'Challenger B'
 WHEN br.bronto_delivery_name like '%C' THEN 'Challenger C'
 Else 'Other'
 end
