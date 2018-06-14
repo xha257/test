@@ -87,7 +87,7 @@ When br.bronto_delivery_name like 'GM%' then bronto_delivery_name
 When br.bronto_delivery_name like 'FDR%' or  br.bronto_delivery_name like  'Genesis%' or   br.bronto_delivery_name like  'Equifax%' then bronto_delivery_name
 When br.bronto_delivery_name like 'Trio%' then 'Trio'
 when (br.bronto_delivery_name like 'GEM%') then left(br.bronto_delivery_name,5)
-when (br.`bronto_delivery_name` like 'HSLGM%') then left(br.bronto_delivery_name,7) 
+when (br.bronto_delivery_name like 'HSLGM%') then left(br.bronto_delivery_name,7) 
 ELSE 'NA'
 END 
 ) as email_message,
